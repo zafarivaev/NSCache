@@ -31,7 +31,7 @@ class PhotosViewController: UICollectionViewController {
             let url = URL(string: "https://picsum.photos/200")!
             
             guard let data = try? Data(contentsOf: url) else { return }
-            guard let image = UIImage(data: data) else { return }
+            let image = UIImage(data: data)
             
             DispatchQueue.main.async {
                 completion(image)
