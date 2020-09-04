@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotosViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class PhotosViewController: UICollectionViewController {
     
     private let cache = NSCache<NSNumber, UIImage>()
     private let utilityQueue = DispatchQueue.global(qos: .utility)
